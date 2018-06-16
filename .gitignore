@@ -1,4 +1,6 @@
 .DS_Store
-/SPM/.build
+.tmp
+.build
 /SPM/Packages
 /SPM/*.xcodeproj
+
