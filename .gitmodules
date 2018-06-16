@@ -1,0 +1,3 @@
+[submodule "Fluenti"]
+	path = Fluenti
+	url = git@github.com:LiveUI/Fluenti.git
