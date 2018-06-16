@@ -10,22 +10,21 @@ echo "Fluenti generator by LiveUI"
 echo "Update SPM folder (original code)"
 
 #cd ./SPM && vapor clean -y --verbose && rm -f Package.resolved && rm -rf .build && vapor xcode -n --verbose
-
+s
 echo "Clean Fluenti folder, all but essentials"
 cd ./Fluenti
 
 mkdir -p ../.tmp
 
 cp .gitignore ../.tmp/.gitignore
+cp Package.swift ../.tmp/Package.swift
 cp LICENSE ../.tmp/LICENSE
 cp README.md ../.tmp/README.md
 
 find . ! -name '.git' -type f -exec rm -rf {} +
-pwd
-exit
-
 
 cp ../.tmp/.gitignore .gitignore
+cp ../.tmp/Package.swift Package.swift
 cp ../.tmp/LICENSE LICENSE
 cp ../.tmp/README.md README.md
 
