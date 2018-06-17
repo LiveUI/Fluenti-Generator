@@ -4,3 +4,5 @@
 /SPM/Packages
 /SPM/*.xcodeproj
 
+Carthage/
+Cartfile.resolved
