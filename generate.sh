@@ -55,9 +55,11 @@ sed -i -e 's/Fluenti-Package/Fluenti/g' ./Fluenti.xcodeproj/xcshareddata/xcschem
 
 echo "Change project to iOS"
 # TODO: Improve handing of the hardcoded values below!!!
-sed -i -e 's/\$(TOOLCHAIN_DIR)\/usr\/lib\/swift\/macosx//g' ./Fluenti.xcodeproj/project.pbxproj
-sed -i -e 's/SDKROOT = "macosx"/SDKROOT = "iphoneos"/g' ./Fluenti.xcodeproj/project.pbxproj
-sed -i -e 's/MACOSX_DEPLOYMENT_TARGET = "10.10"/IPHONEOS_DEPLOYMENT_TARGET = "11.3"/g' ./Fluenti.xcodeproj/project.pbxproj
+#sed -i -e 's/\$(TOOLCHAIN_DIR)\/usr\/lib\/swift\/macosx//g' ./Fluenti.xcodeproj/project.pbxproj
+#sed -i -e 's/SDKROOT = "macosx"/SDKROOT = "iphoneos"/g' ./Fluenti.xcodeproj/project.pbxproj
+#sed -i -e 's/MACOSX_DEPLOYMENT_TARGET = "10.10"/IPHONEOS_DEPLOYMENT_TARGET = "11.3"/g' ./Fluenti.xcodeproj/project.pbxproj
+
+
 
 echo "Commit changes to git"
 git add -A

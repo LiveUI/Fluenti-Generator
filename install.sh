@@ -3,5 +3,5 @@
 # Fetch Fluenti submodule
 git submodule update --recursive
 
-# Install text replace tool
-brew install mysql-search-replace
+
+brew install swiftxcode/swiftxcode/swift-xcode
